@@ -26,7 +26,7 @@ def readAndCreate(dir_path, vehicles):
             raise Exception("Error! Not find or exists " + jsonData["type"] + " constructor!")
 
 
-def listVehicle(vehicles):
+def listVehicles(vehicles):
     print("\nList vehicles:")
     for vehicle in vehicles:
         if type(vehicle).__name__ == "Bike":
@@ -50,4 +50,4 @@ def getFiles(base_dir):
 if __name__ == "__main__":
     vehicles = []
     readAndCreate("data", vehicles)
-    listVehicle(vehicles)
+    listVehicles(vehicles)
